@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo App</title>
+    <link rel="stylesheet" href="./css/meteoApp.css">
+</head>
+<body>
+    <div class="weather-container">
+        <input type="text" class="search-box" placeholder="Entrez le nom d'une ville..." id="cityInput">
+        <button class="search-btn">Rechercher</button>
+        
+        <div class="loading" id="loading">Chargement...</div>
+        <div class="error" id="error"></div>
+        
+        <div class="weather-info" id="weatherInfo">
+            <div class="city-name" id="cityName"></div>
+            <div class="weather-icon" id="weatherIcon">
+            <img id="weatherImage" src="" alt="" width="100px" height="100px">
+            </div>
+            <div class="temperature" id="temperature"></div>
+            <div class="description" id="description"></div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Humidité</div>
+                    <div class="detail-value" id="humidity"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Vent</div>
+                    <div class="detail-value" id="windSpeed"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Pression</div>
+                    <div class="detail-value" id="pressure"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Ressenti</div>
+                    <div class="detail-value" id="feelsLike"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/meteoApp.js"></script>
+</body>
+</html>
